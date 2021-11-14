@@ -1,0 +1,78 @@
+
+<section class="nh">
+    <div class="navbar">
+        <div class="logo">
+            <img src="https://thumbs.dreamstime.com/b/travel-agency-logo-trip-design-vector-illustration-189081657.jpg" alt="india tour">
+        </div>
+        <div class="nav">
+            <ul class="navitems">
+                <a href="{% url 'home_page' %}"><li>Home</li></a>
+                <a href="{% url 'explore' %}"><li>Explore</li></a>
+                <a href="{% url 'about' %}"><li>About Us</li></a>
+                <a href="{% url 'contact' %}"><li>Contact Us</li></a>
+                <a href="{% url 'profile' %}"><li>Profile</li></a>
+            </ul>
+        </div> 
+        </div>
+        <!-- <section class="home">
+        <h1>Welcome to India Tour</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum, dolores qui cupiditate sequi eaque
+            adipisci animi. Accusantium maiores voluptatum perferendis Lorem ipsum dolor sit amet. Lorem ipsum dolor
+            sit amet consectetur adipisicing elit. Perspiciatis, sunt. Lorem ipsum dolor sit amet consectetur,
+            adipisicing elit. Repellendus, quasi.</p>
+    </section>
+        
+
+    -->
+</section>
+
+{% block content %}
+{% endblock %}
+
+
+<style>
+.navbar{
+  display: flex;
+  flex-direction: row;
+}
+
+.logo img{
+  width: 5vw;
+  height: 5vw;
+  margin: 3rem 1rem;
+}
+
+.navitems{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+}
+
+ul{
+  margin-top: 4.5rem;
+  margin-bottom: 5rem;
+}
+
+.navbar::before{
+
+  content:"";
+  background-color: #333;
+  width:100%;
+  height:20%;
+  position:absolute;
+  z-index:-1;
+ 
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)
+
+ 
+}
+
+.navitems li{
+  margin:1vw ;
+  list-style: none;
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+}
+</style>

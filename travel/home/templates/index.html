@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>India Tour.com</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/phone.css">
+</head>
+
+<body>
+    <section class="nh">
+        <div class="navbar">
+            <div class="logo">
+                <img src="https://thumbs.dreamstime.com/b/travel-agency-logo-trip-design-vector-illustration-189081657.jpg" alt="india tour">
+            </div>
+            <div class="nav">
+                <ul class="navitems">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="{% url 'explore' %}">Explore</a></li>
+                    <li><a href="{% url 'about' %}">About Us</a></li>
+                    <li><a href="{% url 'contact' %}">Contact Us</a></li>
+                    <li><a href="{% url 'profile' %}">Profile</a></li>
+                </ul>
+            </div>
+            <div class="search">
+                <input type="search" placeholder="Search your favourite destination">
+            </div>
+        </div>
+
+        <section class="home">
+            <h1>Welcome to India Tour</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum, dolores qui cupiditate sequi eaque
+                adipisci animi. Accusantium maiores voluptatum perferendis Lorem ipsum dolor sit amet. Lorem ipsum dolor
+                sit amet consectetur adipisicing elit. Perspiciatis, sunt. Lorem ipsum dolor sit amet consectetur,
+                adipisicing elit. Repellendus, quasi.</p>
+            <input type="Submit" value="Book now">
+        </section>
+    </section>
+
+    <section class="package">
+        <h1>Our best packages</h1>
+        <div class="container">
+            <div class="pitem">
+                <img src="https://images.unsplash.com/photo-1598091383021-15ddea10925d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8a2FzaG1pcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="kashmir">
+                <h2>Kashmir</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi, quia. Lorem ipsum dolor sit amet.
+                    Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="pitem">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Mumbai_Skyline_at_Night.jpg/1199px-Mumbai_Skyline_at_Night.jpg" alt="mumbai">
+                <h2>Mumbai</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime ad vero tenetur. Voluptatum
+                    dignissimos unde repellendus eveniet quos nostrum hic.</p>
+            </div>
+            <div class="pitem">
+                <img src="https://1.bp.blogspot.com/-X5ED-Wjk-BM/XqiMNUCoiEI/AAAAAAAACTs/qi5cqhECUeQhHga_N43aPXUu9qoAjPQxwCLcBGAsYHQ/s1600/Darjeeling%2BHimalayan%2BRailway%2BToy%2BTrain.jpg" alt="darjeeling">
+                <h2>Darjeeling</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque architecto magnam reiciendis tempora
+                    perspiciatis labore laboriosam, recusandae cumque aspernatur quae</p>
+            </div>
+
+        </div>
+    </section>
+
+  <div class="break"></div>
+
+    <section class="client-section">
+        <h1>Our Clients</h1>
+        <div class="clients">
+            <div class="citem">
+                <img src="https://media.glassdoor.com/sqll/2032698/veena-world-squarelogo-1582120739716.png" alt="jio">
+            </div>
+            <div class="citem">
+                <img src="https://www.jobriya.in/wp-content/uploads/2017/12/1200px-SpiceJet_logo.svg_.png" alt="jaguar">
+            </div>
+            <div class="citem">
+                <img src="https://image.shutterstock.com/image-photo/zagreb-croatia-november-25-2014-600w-233098300.jpg" alt="airtel">
+            </div>
+            <div class="citem">
+                <img src="img/download (1).png" alt="godrej">
+            </div>
+        </div>
+    </section>
+
+    <!-- <section class="contact">
+        <h1>Contact Us</h1>
+        <div class="form"> 
+        <form action="#">
+            <div class="nam">
+                <label for="name">Name:</label><br>
+                <input type="text" placeholder="Enter your Name" id="name">
+            </div>
+            <div class="nam">
+                <label for="number">Phone Number:</label><br>
+                <input type="phone" placeholder="Enter your Phone Number" id="number">
+            </div>
+            <div class="nam">
+                <label for="email">Email:</label><br>
+                <input type="email" placeholder="Enter your Email" id="email">
+            </div>
+            <div class="nam">
+                <label for="message">Message:</label><br>
+                <textarea name="message" id="" cols="67" rows="10" id="message"></textarea>
+            </div>
+            <div class="nam" id="send">
+                <input type="submit" value="Send">
+            </div>
+           
+        </form>
+    </div>
+       
+    </section> -->
+
+    <!-- <div class="follow">
+        <h1>Follow us on</h1>
+        <div class="insta" id="iimg">
+            <img src="" alt="">
+        </div>
+        <div class="insta" id="ilink">
+            <a href=""></a>
+        </div>
+    </div> -->
+    <footer>
+        <div class="footer">
+            Copyright &COPY; www.India Tour.com.com.All Rights Reserved!
+        </div>
+    </footer>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+<style>
+
+
+*{
+    margin:0;
+    padding:0;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Navigation Menu  */
+
+.navbar .logo img{
+    width:3.8rem;
+    height:3.8rem;
+    padding:1.3rem;
+}
+
+.navbar{
+    display:flex;
+    height:7rem;
+    position:relative;
+}
+
+.navbar::before{
+    content:"";
+    background: #333;
+    width:100%;
+    height:100%;
+    position:absolute;
+    z-index:-1;
+    /* opacity:0.4; */
+
+   
+}
+
+.navitems{
+    display:flex;
+    padding:1.85rem 0.3rem;
+    margin:1.6rem 0.3rem;
+}
+
+.navitems li{
+    list-style:none;
+    padding:0.3rem 1.3rem;
+    color:white;
+    font-size:1.2rem;
+    padding-bottom: 1rem;
+}
+
+.navitems li a{
+    color: #fff;
+}
+
+.navitems li:hover{
+    background-color: #333;
+    color:#fff;
+    cursor: pointer;
+    border-radius:1rem;
+
+}
+
+.search input{
+    width:15rem;
+    position: relative;
+    top: 2.5rem;
+    right: -35rem;
+    padding: 0.3rem 0.3rem;
+    margin: 0.3rem;
+    border-radius:1rem;
+    border:2px solid black;
+}
+
+/* Home Section  */
+.home{
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position:relative;
+    color:rgb(238, 228, 228);
+}
+
+.home h1{
+    text-align:center;
+    font-size:3rem;
+    
+}
+
+.home p{
+    text-align:center;
+    font-size:1.3rem;
+}
+.home input{
+    display:block;
+    margin:0.8rem auto;
+    border:2px solid black;
+    border-radius:1rem;
+    padding:0.5rem;
+    width:8rem;
+    font-size:1rem;
+    font-weight:bold;
+    color:white;
+    background:rgb(145, 143, 143);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.home input:hover{
+    background:white;
+    color:black;
+    cursor:pointer;
+}
+
+.nh{
+    position:relative;
+}
+.nh::before{
+    content:"";
+    background:url(https://cdn.pixabay.com/photo/2016/09/07/07/11/pangong-tso-1650946_960_720.jpg) no-repeat center center/cover;
+    position:absolute;
+    width:100%;
+    height:110%;
+    z-index:-1;
+    opacity:0.9;
+}
+
+/* package section  */
+
+.package h1{
+    font-size:3rem;
+    text-align:center;
+    padding:1rem;
+    padding-top:2rem;
+    color:black;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    position:relative;
+}
+
+/* .container .pitem{
+    border:2px solid black;
+} */
+.container .pitem img{
+    width:40rem;
+    height:20rem;
+
+    
+
+    /* border-radius:8rem; */
+    box-sizing: border-box;
+    /* padding:1rem 5rem; */
+    display: block;
+    margin:auto;
+    /* padding-top:0.3rem; */
+}
+
+.container .pitem p{
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size:1.3rem;
+    text-align:center;
+    color:black;
+}
+
+.pitem{
+    margin:1rem;
+    /* border-radius:1rem; */
+    width:100rem;
+    height:30rem;
+    overflow: hidden;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)
+}
+.pitem h2{
+    text-align:center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:black;
+}
+
+.container::before{
+    content:"";
+    /* background:url(../img/taj-mahal-1209004__480.webp) no-repeat center center/cover; */
+    width:100%;
+    height:100%;
+    position:absolute;
+    z-index:-1;
+    opacity:0.7;
+
+}
+
+/* Client Section  */
+
+.client-section{
+    position:relative;
+}
+
+.clients{
+    display:flex;
+    align-items:center;
+    justify-content:space-evenly;
+}
+
+.clients .citem img{
+    width:13rem;
+    height:10rem;
+    border-radius:100%;
+}
+
+.client-section h1{
+    text-align: center;
+    font-size:3rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding:1.5rem;
+    color: black;
+}
+
+.break{
+    height: 35vh;
+    background: url("https://i.imgur.com/gc1HjiF.jpg") no-repeat center center/cover;
+}
+
+.client-section::before{
+    content:"";
+
+    width:100%;
+    height:100%;
+    position:absolute;
+    z-index:-1;
+    opacity:0.8;
+}
+
+/* Contact Section */
+
+.contact h1{
+    text-align:center;
+    font-size:3rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.form{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+
+.form input{
+   padding:0.5rem 10rem; 
+    margin:0.2rem;
+    border-radius:5px;
+    border:2px solid black;
+}
+
+#send{
+    width:30rem;
+    margin-bottom:0.3rem;
+}
+
+textarea{
+    border-radius:5px;
+    border:2px solid black;
+    font-weight:bold;
+    text-align:center;
+    text-justify:auto;
+}
+
+#send input{
+    background:red;
+    color:white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display:block;
+    margin:auto;
+}
+
+label{
+    font-size:1.2rem;
+}
+
+input{
+    font-weight:bold;
+}
+
+.contact{
+    position:relative;
+}
+.contact::before{
+    content:"";
+    background: url(../img/contact-us-2993000__480.webp) no-repeat center center/cover;
+    width:100%;
+    height:100%;
+    position:absolute;
+    z-index:-1;
+    opacity:0.7;
+}
+
+.footer{
+    text-align:center;
+    background: black;
+    color:white;
+    padding:0.2rem;
+}
+
+
+</style>

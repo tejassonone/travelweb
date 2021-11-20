@@ -21,3 +21,12 @@ def contact(request):
 
 def profile(request):
     return render(request, 'profile.html')
+
+
+
+def help(request):
+    return render(request, 'help.html')
+
+
+def success(request):
+    return render(request, 'success.html')

@@ -1,0 +1,145 @@
+{% extends 'navbar.html' %}
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+  font-family: Sans-serif;
+  font-size: 18px;
+  color: #fff;
+  background:#fff;
+}
+
+.content {
+  width: 80%;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.centerplease {
+  margin: 0 auto;
+  max-width: 270px;
+  font-size: 40px;
+}
+
+/*Question*/
+.question {
+  position: relative;
+  background: #333;
+  margin: 0;
+  padding: 10px 10px 10px 50px;
+  display: block;
+  width:100%;
+  cursor: pointer;
+}
+/*Answer*/
+.answers {
+  padding: 0px 15px;
+  margin: 5px 0;
+  width:100%!important;
+  height: 0;
+  overflow: hidden;
+  z-index: -1;
+  position: relative;
+  opacity: 0;
+  -webkit-transition: .3s ease;
+  -moz-transition: .3s ease;
+  -o-transition: .3s ease;
+  transition: .3s ease;
+  background-color: #3337;
+
+}
+
+.questions:checked ~ .answers{
+  height: auto;
+  opacity: 1;
+  padding: 15px;
+  
+}
+
+/*FAQ Toggle*/
+.plus {
+  position: absolute;
+  margin-left: 10px;
+  z-index: 5;
+  font-size: 2em;
+  line-height: 100%;
+  -webkit-user-select: none;    
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  -webkit-transition: .3s ease;
+  -moz-transition: .3s ease;
+  -o-transition: .3s ease;
+  transition: .3s ease;
+
+}
+
+.questions:checked ~ .plus {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+
+}
+
+.questions {
+  display: none;
+  
+}
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="centerplease" style="color: black;">
+        FAQ's
+      </div>
+      <br>
+      
+      <div class="content">
+      <div>
+        <input type="checkbox" id="question1" name="q"  class="questions">
+        <div class="plus">+</div>
+        <label for="question1" class="question">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, earum?
+        </label>
+        <div class="answers" >
+     Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam tempora est obcaecati?</div>
+      </div>
+      
+      <div>
+        <input type="checkbox" id="question2" name="q" class="questions">
+        <div class="plus">+</div>
+        <label for="question2" class="question">
+         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut.
+        </label>
+        <div class="answers">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam porro aperiam eum deleniti ad aspernatur.
+        </div>
+      </div>
+        
+      <div>
+        <input type="checkbox" id="question3" name="q" class="questions">
+        <div class="plus">+</div>
+        <label for="question3" class="question">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.  
+        </label>
+        <div class="answers">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia nisi, impedit debitis sapiente amet beatae!
+        </div>
+      </div>
+      </div>
+</body>
+</html>
+
+{% endblock %}
